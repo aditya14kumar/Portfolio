@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interaction using alert, confirm and prompt</title>
+</head>
+<body>
+    <div class="container">
+        This is a page 
+    </div>
+    
+    <script>
+       //Alert is in-browser javascript
+    //    alert("This is a message")
+
+    // let name = prompt("What is your name?", "Guest");
+    // console.log(name);
+
+    // let deletePost = confirm("Do you want to delete post");
+    // console.log(deletePost);
+
+    // let friends = ["Rohan", "Aditya", "Harsh", "rohit"];
+    // friends.forEach(function f(element){
+    //     console.log(element);
+    // });
+
+    let emp = {
+        name: "Aditya",
+        salary: 10000000,
+        work:"SEO"
+    }
+    for(key in emp){
+        console.log(`This ${key} of employee is ${emp[key]}`);
+    }
+    </script>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Js Events</title>
+  </head>
+  <style>
+    #btn {
+      padding: 10px 14px;
+      background-color: red;
+      border: 2px solid blac;
+      color: white;
+      font-weight: bold;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <h1>This is my Heading</h1>
+      <p id="para">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam ex
+        ab explicabo! Temporibus ab magnam aut, ipsum ut quaerat nesciunt
+        doloremque commodi dolor accusantium odio ipsam deserunt explicabo
+        ratione doloribus fugiat earum, consectetur repellendus vitae fuga eaque
+        numquam nostrum inventore? Veritatis rem nam, dicta mollitia eum
+        explicabo culpa quaerat veniam maxime qui maiores assumenda omnis alias
+        illo pariatur voluptate unde quibusdam perferendis vel. Ab, modi
+        provident? Ab ducimus perspiciatis earum exercitationem autem illum iste
+        impedit reprehenderit, alias deserunt neque quidem, similique qui
+        deleniti non odit architecto fugit ex, hic maxime at? Ex eaque tempora
+        cum enim adipisci repellat reiciendis iusto, eum voluptates animi
+        corrupti libero temporibus dicta beatae laborum aperiam vitae aliquam
+        voluptatem voluptas harum commodi. Quidem voluptas beatae unde
+        praesentium numquam, dolorem reiciendis possimus doloribus? Veniam
+        necessitatibus, vero, culpa fugiat tempora aspernatur optio illum
+        expedita repudiandae a sapiente? Mollitia aliquam debitis,
+        necessitatibus nemo odit, voluptatibus voluptatem cumque molestias porro
+        perferendis tempora officia accusantium sequi veniam sint! Nemo enim
+        itaque expedita dolore? Harum molestiae laboriosam reiciendis sapiente
+        fugit voluptas esse eligendi et odit dolor quas atque, natus illo cumque
+        sint, ea voluptatibus accusamus ex eveniet mollitia ut hic. Repudiandae
+        mollitia nostrum ut facilis eum facere voluptatum architecto voluptatem
+        rerum explicabo. Ex pariatur facere exercitationem maxime beatae debitis
+        recusandae cum, ipsam voluptatem consequuntur vel atque facilis dicta
+        necessitatibus iusto id rerum, illo qui nisi, similique quo ratione
+        porro. Nam, labore maiores.
+      </p>
+    </div>
+    <button id="btn" onclick="toggleHide()">Hide/Show</button>
+    <script>
+      let para = document.getElementById('para');
+      para.addEventListener('mouseover', function run(){
+        alert('Mouse Inside');
+      });
+
+      function toggleHide(){
+        let btn = document.getElementById('btn');
+        let para = document.getElementById('para');
+        if (para.style.display !='none') {
+          para.style.display = 'none';
+        } 
+        else {
+          para.style.display = 'block';
+        }
+      }
+    </script>
+  </body>
+</html>
